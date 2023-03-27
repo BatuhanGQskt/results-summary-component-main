@@ -1,0 +1,197 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+p {
+    font-size: 18px;
+}
+
+html {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+  max-width: 400px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+#left-container, #right-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+#left-container {
+    padding : 5%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#left-container header h1, #result_text {
+  color : hsl(241, 100%, 89%);
+  font-size: 1.3rem;;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  margin : 0 auto;
+  border-radius: 50%;
+  background : linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  padding : 5%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+#result_text {
+  padding : 0px 15px 15px 15px;
+}
+
+#result_header {
+  color : hsl(221, 100%, 96%);
+}
+
+#result_val {
+  font-size : 2rem;
+  color : white;
+}
+
+#result_out_of {
+  color : hsl(224, 30%, 27%);
+  opacity: 40%;
+}
+
+#right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding : 5%;
+}
+
+#right-container header h1 {
+  font-size : 1.4rem;
+}
+
+.box {
+    display: flex;
+    justify-content:start;
+    border-radius: 10px;
+    padding : 3%;
+}
+
+.box_information {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#box_name {
+    justify-content: left;
+}
+
+#reaction_box {
+    background-color: #FFF6F5ff;;
+    opacity: 70%;
+}
+
+#memory_box {
+    background-color: #FFFBF2ff;
+}
+
+#verbal_box {
+  background-color: #F2FBFAff;;
+}
+
+#visual_box {
+  background-color: #F3F3FDff;
+}
+
+#reaction_box #box_name {
+    color : hsl(0, 100%, 67%);
+}
+
+#memory_box #box_name {
+    color : hsl(39, 100%, 56%);
+}
+
+#verbal_box #box_name {
+    color : hsl(166, 100%, 37%);
+}
+
+#visual_box #box_name {
+    color : hsl(234, 85%, 45%);
+}
+
+main button {
+    color : hsl(221, 100%, 96%);
+    background-color: hsl(224, 30%, 27%);
+    border-radius : 30px;
+    margin : 15px;
+    padding : 15px;
+}
+
+button:hover {
+  cursor: pointer;
+}

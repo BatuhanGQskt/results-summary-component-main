@@ -1,0 +1,13 @@
+@media (min-width:800px) {
+    main, #left-container {
+        border-radius: 5%;
+    }
+
+    main {
+        max-width: 900px;
+        display: flex;
+        flex-direction: row;
+        margin : 10%;
+        box-shadow: 4px 4px 9px 1px rgba(0,0,0,0.29);
+    }
+}

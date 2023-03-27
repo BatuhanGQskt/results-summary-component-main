@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/query.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div id="left-container">
+      <header>
+        <h1>Your Result</h1>
+      </header>
+      <div id="result">
+        <p id="result_val">76</p>
+        <p id="result_out_of">
+          of 100
+        </p>
+      </div>
+      <h1 id="result_header">
+        Great
+      </h1>
+      <p id="result_text">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </div>
+    <div id="right-container">
+      <header>
+        <h1>
+          Summary
+        </h1>
+      </header>
+      <div id="reaction_box" class="box">
+        <img src="./assets/images/icon-reaction.svg" alt="reaction icon">
+        <div class="box_information">
+          <p id="box_name">Reaction</p>
+          <p id="box_val"> <b>80</b> / 100</p>
+        </div>
+      </div>
+      <div id="memory_box" class="box">
+        <img src="./assets/images/icon-memory.svg" alt="memory icon">
+        <div class="box_information">
+          <p id="box_name">Memory</p>
+          <p id="box_val"><b>92</b> / 100</p>
+        </div>
+      </div>
+      <div id="verbal_box" class="box">
+        <img src="./assets/images/icon-verbal.svg" alt="verbal icon">
+        <div class="box_information">
+          <p id="box_name">Verbal</p>
+          <p id="box_val"><b>61</b> / 100</p>
+        </div>
+      </div>
+      <div id="visual_box" class="box">
+        <img src="./assets/images/icon-visual.svg" alt="visual icon">
+        <div class="box_information">
+          <p id="box_name">Visual</p>
+          <p id="box_val"><b>72</b> / 100</p>
+        </div>
+      </div>
+      <button>Continue</button>
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
