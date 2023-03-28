@@ -147,7 +147,7 @@ main {
     justify-content: space-between;
 }
 
-#box_name {
+.box_name {
     justify-content: left;
 }
 
@@ -168,19 +168,19 @@ main {
   background-color: #F3F3FDff;
 }
 
-#reaction_box #box_name {
+#reaction_box .box_name {
     color : hsl(0, 100%, 67%);
 }
 
-#memory_box #box_name {
+#memory_box .box_name {
     color : hsl(39, 100%, 56%);
 }
 
-#verbal_box #box_name {
+#verbal_box .box_name {
     color : hsl(166, 100%, 37%);
 }
 
-#visual_box #box_name {
+#visual_box .box_name {
     color : hsl(234, 85%, 45%);
 }
 
